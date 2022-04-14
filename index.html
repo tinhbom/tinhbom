@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top-navigation">
+            <h1 class="logo">
+                <a href="index.html" title="Summer and Storm">
+                    <img src="images/logo.png" alt="Summer and Storm">
+                </a>
+            </h1>
+            <div class="navigation">
+                <nav class="nav">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#">New Arrivals</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Limited Edition</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Baby</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Kids</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Shop The Look</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Women</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">S&S Home</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Sale</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Gift Card</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-top-action">
+            <div class="searchbox">
+                <form action="#" id="searchbox">
+                    <input type="text" onclick="inputClick()" placeholder="Tìm kiếm" id="search-box" name="s" value="" style="display: none;" />
+                    <div class="search-icon icon" onclick="searchIconClick()">
+                        <img src="images/icon-search.svg" alt="Search Icon">
+                    </div>
+                </form>
+            </div>
+            <div class="wishlist">
+                <div class="icon">
+                    <img src="images/icon-heart.svg" alt="">
+                </div>
+            </div>
+            <div class="cart-wrapper">
+                <div class="icon">
+                    <img src="images/icon-cart.svg" alt="">
+                </div>
+                <span class="count">11</span>
+            </div>
+            <div class="acc-wrapper">
+                <div class="icon">
+                    <img src="images/icon-account.svg" alt="">
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- Home Banner -->
+        <section class="home-banner">
+            <div class="home-banner-content">
+                <picture>
+                    <source media="(min-width:769px)" srcset="images/hompage-banner.png">
+                    <img src="images/homepage-banner-mobile.png" alt="Flowers">
+                </picture>
+                <div class="description">
+                    <h4>New Summer <br />
+                    Arrivals Sale Now</h4>
+                    <a href="#" class="add-to-cart">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discovery -->
+        <section class="discovery">
+            <div class="container">
+                <div class="discovery-content">
+                    <h2 class="section-title title-bold">Discovery more</h2>
+                    <div class="discovery-list">
+                        <article class="item">
+                            <a href="#">
+                                <img src="images/gallery1.png" alt="" class="thumnail">
+                                <h3 class="title-bold">Shop Kids</h3>
+                            </a>
+                        </article>
+                        <article class="item">
+                            <a href="#">
+                                <img src="images/gallery2.png" alt="" class="thumnail">
+                                <h3 class="title-bold">Shop Baby</h3>
+                            </a>
+                        </article>
+                        <article class="item">
+                            <a href="#">
+                                <img src="images/gallery3.png" alt="" class="thumnail">
+                                <h3 class="title-bold">Shop Limited Edition</h3>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore -->
+        <section class="explore">
+            <div class="container">
+                <div class="explore-content">
+                    <h2>Explore</h2>
+                    <ul class="exlore-list">
+                        <li>
+                            <a href="#">new arrivals</a>
+                        </li>
+                        <li>
+                            <a href="#">baby</a>
+                        </li>
+                        <li>
+                            <a href="#">kids</a>
+                        </li>
+                        <li>
+                            <a href="#">shop the look</a>
+                        </li>
+                        <li>
+                            <a href="#">women</a>
+                        </li>
+                        <li>
+                            <a href="#">sale</a>
+                        </li>
+                        <li>
+                            <a href="#">S&S home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <ul class="footer-menu">
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">CUSTOMER CARE</a>
+                    </li>
+                    <li>
+                        <a href="#">RETURNS</a>
+                    </li>
+                    <li>
+                        <a href="#">STOCKISTS</a>
+                    </li>
+                    <li>
+                        <a href="#">INSTAGRAM</a>
+                    </li>
+                    <li>
+                        <a href="#">newsletter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © <img src="images/logo-horizon.png" alt="">
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
